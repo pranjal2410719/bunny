@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(135, 118, 118);
+  overflow-x: hidden;
+}
+
+/* PAGE WRAPPER */
+main {
+  position: relative;
+}
+
+/* SCROLL SECTIONS */
+section {
+  min-height: 100vh;
+  border: 2px solid white;
+  position: relative;
+  z-index: 2;
+}
+
+/* THREE.JS CANVAS */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
